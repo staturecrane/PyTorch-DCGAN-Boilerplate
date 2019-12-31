@@ -31,7 +31,7 @@ Many different sources have shown that GAN training is more stable when the disc
 
 ### --lr_g 0.0001 --lr_d 0.0004 --batchSize 64 --imageSize 64 --ndf 64 --ngf 64 --cuda
 
-![](save_data/fake_samples_epoch_035.png)
+![](save_data/fake_samples_epoch_048.png)
 
 
 ## Installation
@@ -52,4 +52,4 @@ The training script expects you to have a data directory with one or more subdir
 python3 main.py --dataroot data --dataset folder --workers 8 --batchSize 128 --imageSize 64 --cuda --niter 500 --outf save_data --lr_g 0.0004 --lr_d 0.0001
 ```
 
-Test your dataset on a smaller image size first before bumping up to 128 or 256 (the other image sizes currently supported).
+The full list of parameters and their explanations are mostly unchanged and provided in `main.py`. Test your dataset on a smaller image size first before bumping up to 128 or 256 (the other image sizes currently supported).
