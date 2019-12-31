@@ -31,7 +31,7 @@ Many different sources have shown that GAN training is more stable when the disc
 
 ### --lr_g 0.0001 --lr_d 0.0004 --batchSize 64 --imageSize 64 --ndf 64 --ngf 64 --cuda
 
-![](save_data/fake_samples_epoch_048.png)
+![](save_data/fake_samples_epoch_100.png)
 
 
 ## Installation
