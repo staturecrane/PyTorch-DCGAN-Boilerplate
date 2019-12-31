@@ -2,7 +2,7 @@
 
 This repository is an extension and embellishment of the sample DCGAN from the [PyTorch repository](https://github.com/pytorch/examples/tree/master/dcgan). It is intended to collect a number of modern tricks for GAN stabilization and be made extensible for anyone wishing to do further research or play around, as well as tested on a tricker dataset (art paintings) to validate stability. 
 
-As the original is from my experience one of the most reliable GAN implementations and has been updated for newer versions of PyTorch, modifications have only been made to update the practices to more modern techniques, but keep the structure and utilities mostly the same. Multi-GPU training and multiple dataset support remain unmodified, and most variable names remain the same except where they have been changed for readability. It is very easy to train on your own set of data, simply create a `data` folder and put your training images into one or more subfolder:
+As the original is from my experience one of the most reliable GAN implementations and has been updated for newer versions of PyTorch, modifications have only been made to update the practices to more modern techniques, but keep the structure and utilities mostly the same. Multi-GPU training and multiple dataset support remain unmodified, and most variable names remain the same except where they have been changed for readability. It is very easy to train on your own set of data: simply create a `data` folder and put your training images into one or more subfolder:
 
 ```shell
 mkdir data
@@ -14,7 +14,7 @@ You can then pass this folder into the training file, or you can use one of the 
 Wherever possible, clarity has been preferred over cleverness, including redundancies in the different model configurations, to help with understanding and modifications. It should be easy and clear how to add more layers, take layers away, and test out new configurations. 
 
 ## Additions
-e
+
 ### Spectral Normalization
 
 A recent and popular normalization layer, it has been added to both the generator and discriminator. It's used alongside batch normalization to stabilize training. 
